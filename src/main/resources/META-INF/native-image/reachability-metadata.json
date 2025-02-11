@@ -1,0 +1,48 @@
+{
+  "reflection": [
+    {
+      "type": "java.nio.ByteBuffer"
+    },
+    {
+      "type": "sun.jvmstat.perfdata.monitor.v2_0.PerfDataBuffer",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": [
+            "java.nio.ByteBuffer",
+            "int"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "sun.tools.attach.HotSpotVirtualMachine"
+    }
+  ],
+  "resources": [
+		{
+      "glob": "**/libattach.so"
+    },
+    {
+      "glob": "META-INF/services/com.sun.tools.attach.spi.AttachProvider"
+    },
+    {
+      "module": "jdk.internal.jvmstat",
+      "glob": "sun/jvmstat/perfdata/resources/aliasmap"
+    }
+  ],
+  "bundles": [],
+  "jni": [
+    {
+      "type": "java.lang.Boolean",
+      "methods": [
+        {
+          "name": "getBoolean",
+          "parameterTypes": [
+            "java.lang.String"
+          ]
+        }
+      ]
+    }
+  ]
+}
